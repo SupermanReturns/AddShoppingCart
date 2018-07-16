@@ -15,7 +15,7 @@
 @interface TypeView : UIView
 @property(nonatomic)float height;
 @property(nonatomic)int seletIndex;
-@property (nonatomic,retain) id<TypeSeleteDelegete> delegate;
+@property (nonatomic,strong) id<TypeSeleteDelegete> delegate;
 
 -(instancetype)initWithFrame:(CGRect)frame andDatasource:(NSArray *)arr :(NSString *)typename;
 @end

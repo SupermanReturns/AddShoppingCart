@@ -70,6 +70,7 @@
         _bt_sure.titleLabel.font = [UIFont systemFontOfSize:20];
         [_bt_sure setTitle:@"确定" forState:0];
         [_whiteView addSubview:_bt_sure];
+        
         //有的商品尺码和颜色分类特别多 所以用UIScrollView 分类过多显示不全的时候可滑动查看
         _mainscrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, _lb_line.frame.origin.y+_lb_line.frame.size.height, _whiteView.frame.size.width, _bt_sure.frame.origin.y-(_lb_line.frame.origin.y+_lb_line.frame.size.height))];
         _mainscrollview.showsHorizontalScrollIndicator = NO;
@@ -78,9 +79,12 @@
         //购买数量的视图
         _countView = [[BuyCountView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 50)];
         [_mainscrollview addSubview:_countView];
+        
         [_countView.bt_add addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchUpInside];
         _countView.tf_count.delegate = self;
         [_countView.bt_reduce addTarget:self action:@selector(reduce) forControlEvents:UIControlEventTouchUpInside];
+        
+
     }
     return self;
 }

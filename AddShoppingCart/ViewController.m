@@ -135,6 +135,8 @@
     [UIView animateWithDuration: 0.35 animations: ^{
         choseView.frame =CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height);
         
+        NSLog(@"消失%f====%f",self.view.frame.size.width,self.view.frame.size.height);
+        
         bgview.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
         bgview.center = self.view.center;
     } completion: nil];
