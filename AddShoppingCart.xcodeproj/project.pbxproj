@@ -15,6 +15,9 @@
 		CF09AAC720FB0A84007879BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09AAC620FB0A84007879BC /* main.m */; };
 		CF09AAD120FB0A84007879BC /* AddShoppingCartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09AAD020FB0A84007879BC /* AddShoppingCartTests.m */; };
 		CF09AADC20FB0A84007879BC /* AddShoppingCartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09AADB20FB0A84007879BC /* AddShoppingCartUITests.m */; };
+		CF09AAEB20FB2F77007879BC /* TypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09AAEA20FB2F77007879BC /* TypeView.m */; };
+		CF7455BE20FC281B003984F2 /* BuyCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7455BD20FC281B003984F2 /* BuyCountView.m */; };
+		CF7455C120FC2858003984F2 /* ChoseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7455C020FC2858003984F2 /* ChoseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CF09AAD720FB0A84007879BC /* AddShoppingCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddShoppingCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF09AADB20FB0A84007879BC /* AddShoppingCartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddShoppingCartUITests.m; sourceTree = "<group>"; };
 		CF09AADD20FB0A84007879BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF09AAE920FB2F77007879BC /* TypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeView.h; sourceTree = "<group>"; };
+		CF09AAEA20FB2F77007879BC /* TypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeView.m; sourceTree = "<group>"; };
+		CF7455BC20FC281B003984F2 /* BuyCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuyCountView.h; sourceTree = "<group>"; };
+		CF7455BD20FC281B003984F2 /* BuyCountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyCountView.m; sourceTree = "<group>"; };
+		CF7455BF20FC2858003984F2 /* ChoseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChoseView.h; sourceTree = "<group>"; };
+		CF7455C020FC2858003984F2 /* ChoseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				CF09AAB820FB0A81007879BC /* AppDelegate.m */,
 				CF09AABA20FB0A81007879BC /* ViewController.h */,
 				CF09AABB20FB0A81007879BC /* ViewController.m */,
+				CF09AAE920FB2F77007879BC /* TypeView.h */,
+				CF09AAEA20FB2F77007879BC /* TypeView.m */,
+				CF7455BC20FC281B003984F2 /* BuyCountView.h */,
+				CF7455BD20FC281B003984F2 /* BuyCountView.m */,
+				CF7455BF20FC2858003984F2 /* ChoseView.h */,
+				CF7455C020FC2858003984F2 /* ChoseView.m */,
 				CF09AABD20FB0A81007879BC /* Main.storyboard */,
 				CF09AAC020FB0A84007879BC /* Assets.xcassets */,
 				CF09AAC220FB0A84007879BC /* LaunchScreen.storyboard */,
@@ -264,6 +279,9 @@
 			files = (
 				CF09AABC20FB0A81007879BC /* ViewController.m in Sources */,
 				CF09AAC720FB0A84007879BC /* main.m in Sources */,
+				CF7455BE20FC281B003984F2 /* BuyCountView.m in Sources */,
+				CF7455C120FC2858003984F2 /* ChoseView.m in Sources */,
+				CF09AAEB20FB2F77007879BC /* TypeView.m in Sources */,
 				CF09AAB920FB0A81007879BC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,14 +452,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = AddShoppingCart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ffd.AddShoppingCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,14 +470,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = AddShoppingCart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ffd.AddShoppingCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
