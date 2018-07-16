@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UIColor *color = [UIColor whiteColor];
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"shangdaohang" ofType:@"png"];
+    //选择一种导航控制器，上导航或者下导航都行
+    ViewController *firstvc = [ViewController new];
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:firstvc];
+    [navigation.navigationBar setBackgroundImage:[UIImage imageWithContentsOfFile:path] forBarMetrics:UIBarMetricsDefault];
+    navigation.navigationBar.shadowImage = [[UIImage alloc] init];
+    navigation.navigationBar.titleTextAttributes = dic;
+    self.window.rootViewController = navigation;
+    
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
